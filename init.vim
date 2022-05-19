@@ -7,32 +7,22 @@ Plug 'tpope/vim-sensible'
 Plug 'junegunn/seoul256.vim'
 Plug 'tanvirtin/monokai.nvim'
 
-" ===========coc===============
-" Use release branch (recommend)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Or build from source code by using yarn: https://yarnpkg.com
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}"
+" coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'} 
+
+" vim-airline: status tabline fachera
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 " ============================
 
-" Disable compatibility to old-time vi
-set nocompatible
-
-set incsearch
-
-" Pone el numero de linea relativo y absoluto
-set number
-set relativenumber
-
-" Enables auto-indent
-set autoindent
-
-" Te deja usar el mouse
-set mouse=a
-
-" speed up scrolling
-set ttyfast
+:set nocompatible 	" Disable compatibility to old-time vi
+:set incsearch
+:set number 		" Pone el numero de linea absoluto
+:set relativenumber 	" Pone el numero de linea relativo
+:set autoindent 	" Enables auto-indent
+:set mouse=a 		" Te deja usar el mouse
+:set ttyfast 		" speed up scrolling
 
 " colorscheme
 colorscheme monokai_pro
