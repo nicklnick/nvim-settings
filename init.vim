@@ -1,6 +1,6 @@
 " => zo : abre el fold actual
 " => zc : cierra el fold actual
-" => za : abre todos los folds
+" => zR : abre todos los folds
 " => zM : cierra todos los folds
 
 " ════✿════✿════✿════✿════✿════✿════✿══╡❉ ╤╤╤╤ ✿ ╤╤╤╤ ❉ ╞══✿════✿════✿════✿════✿════✿════✿══ 
