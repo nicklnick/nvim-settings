@@ -1,7 +1,7 @@
 # My nvim-settings
 
 ## Basics
----
+
 1. Make sure you have everything updated. Run:
 ```bash 
 sudo apt update
@@ -21,7 +21,7 @@ touch init.vim
 4. Download `vim-plug` [here](https://github.com/junegunn/vim-plug).
 
 ## Other requirements
----
+
 1. **git**: Download git if you haven't. Run:
 ```bash
 sudo apt install git
