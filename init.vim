@@ -10,31 +10,32 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-" Declare the list of plugins.
-Plug 'tpope/vim-sensible'
-Plug 'junegunn/seoul256.vim'
-Plug 'tanvirtin/monokai.nvim'
-
 " coc: auto completado
 Plug 'neoclide/coc.nvim', {'branch': 'release'} 
 
-" vim-airline: status tabline fachera
-Plug 'vim-airline/vim-airline'
-
 " nerdtree: file explorer que se maneja con nvim
 Plug 'preservim/nerdtree'
+
+" tagbar: tagbar for code navigation
+" 	=> :TagbarToggle 
+Plug 'preservim/tagbar' 
+
+" Colorscheme
+Plug 'tanvirtin/monokai.nvim'
 
 " vim-commentary: para comentar una linea 
 " 	=> gcc & gc
 Plug 'tpope/vim-commentary' 
 
+" Basic configurations
+Plug 'tpope/vim-sensible'
+"
 " vim-surround: para meter parentesis o lo que sea alrededor de una palabra 
 " 	=> ysw)
 Plug 'tpope/vim-surround' 
 
-" tagbar: tagbar for code navigation
-" 	=> :TagbarToggle 
-Plug 'preservim/tagbar' 
+" vim-airline: status tabline fachera
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 " }}}
@@ -63,7 +64,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 " {{{
 :set nocompatible 	" Disable compatibility to old-time vi
 
-:set incsearch
+:set incsearch          " Highlightea a medida que escribis
 :set hlsearch           " Resalta cuando buscas
 :set ignorecase         " Ignore capital letters during search
 :set smartcase          " Override the ignorecase option if searching for capital letters
@@ -72,9 +73,9 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 :set relativenumber 	" Pone el numero de linea relativo
 
 :set mouse=a 		" Te deja usar el mouse
-:set ttyfast 		" speed up scrolling
-:set scrolloff=10
-:set cursorline		" highlightea la linea en la que estas horizonatalmente
+:set ttyfast 		" Speed up scrolling
+:set scrolloff=10       " Empieza a scrollear cuando faltan 10 lineas para tocar algun borde
+:set cursorline		" Highlightea la linea en la que estas horizonatalmente
 
 :set autoindent 	" Enables auto-indent
 :set expandtab 		" Use space characters instead of tabs
